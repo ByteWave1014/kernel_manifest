@@ -10,7 +10,7 @@
 
   <!-- MSM kernel -->
   <remove-project name="kernel/msm-5.15"/>
-  <project name="kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="kernel" revision="fbf51d276893d9460cf85e61593da73eae6ac91a">
+  <project name="kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="kernel" revision="5f3f91fcfb9cbbcd0a614905f47177194f9b77ba">
     <linkfile dest="kernel_platform/common/build.config.msm.kalama" src="build.config.msm.kalama"/>
     <linkfile dest="kernel_platform/common/scripts/setlocalversion" src="scripts/setlocalversion"/>
   </project>
@@ -36,7 +36,7 @@
 
   <!-- Build -->
   <remove-project name="kernel/build"/>
-  <project name="kernel_platform_build" path="kernel_platform/build/kernel" remote="kernel" revision="dc6bfa61959a4ebb62829182088b31464a7b3516">
+  <project name="kernel_platform_build" path="kernel_platform/build/kernel" remote="kernel" revision="891a9e4bd0ba1f29537c645946be4bd971101c51">
     <linkfile dest="kernel_platform/build/build.sh" src="build.sh"/>
     <linkfile dest="kernel_platform/build/build_abi.sh" src="build_abi.sh"/>
     <linkfile dest="kernel_platform/build/build_test.sh" src="build_test.sh"/>
@@ -59,7 +59,7 @@
   </project>
 
   <!-- Build script -->
-  <project name="kernel_platform_script" path="kernel_platform/script" remote="kernel" revision="98b54884c9ee503635b0205576e64635ee223e4b">
+  <project name="kernel_platform_script" path="kernel_platform/script" remote="kernel" revision="e12568919a2690f2a961607511496f1ac6febbae">
     <linkfile dest="build.sh" src="build.sh"/>
   </project>
 </manifest>
