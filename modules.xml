@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="modules"
-      fetch="ssh://git@github.com/xiaomi-8550-kernel"
-      sync-c="true"
-      sync-tags="false"
-      revision="master" />
+  <remote name="modules" fetch="ssh://git@github.com/xiaomi-8550-kernel" sync-c="true" sync-tags="false" revision="master"/>
 
   <!-- audio-kernel -->
   <project name="vendor_qcom_opensource_audio-kernel-ar" path="vendor/qcom/opensource/audio-kernel" remote="modules" revision="b87ff2fb4f6766fa6407af1baeba278a9fa69a7e">
@@ -61,7 +57,7 @@
   </project>
 
   <!-- graphics-kernel -->
-  <project name="vendor_qcom_opensource_graphics-kernel" path="vendor/qcom/opensource/graphics-kernel" remote="modules" revision="795f7c226aedfe7affc40112ae2971830b6fcdb2" />
+  <project name="vendor_qcom_opensource_graphics-kernel" path="vendor/qcom/opensource/graphics-kernel" remote="modules" revision="795f7c226aedfe7affc40112ae2971830b6fcdb2"/>
 
   <!-- mm-drivers -->
   <project name="vendor_qcom_opensource_mm-drivers" path="vendor/qcom/opensource/mm-drivers" remote="modules" revision="d156a10b4e6c8220b528517ed4da7cb38d903d55">
@@ -74,7 +70,7 @@
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/mmrm_kernel_board.mk" src="mmrm_kernel_board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/mmrm_kernel_product.mk" src="mmrm_kernel_product.mk"/>
   </project>
-  <project name="vendor_qcom_opensource_mmrm-driver-test" path="vendor/qcom/opensource/mmrm-driver/test" remote="modules" revision="e6e34bf83681bad071d05ef6baf8d8db2f7edd7d" />
+  <project name="vendor_qcom_opensource_mmrm-driver-test" path="vendor/qcom/opensource/mmrm-driver/test" remote="modules" revision="e6e34bf83681bad071d05ef6baf8d8db2f7edd7d"/>
 
   <!-- nfc-st-driver -->
   <project name="vendor_qcom_opensource_nfc-st-driver" path="vendor/qcom/opensource/nfc-st-driver" remote="modules" revision="294a5b88accea93d8a78a49225d6415e5da5d8ce">
@@ -107,8 +103,8 @@
   </project>
 
   <!-- wlan -->
-  <project name="vendor_qcom_opensource_wlan_fw-api" path="vendor/qcom/opensource/wlan/fw-api" remote="modules" revision="e0211f6389019686fd56ccb2fb01762186b2bbce" />
-  <project name="vendor_qcom_opensource_wlan_platform" path="vendor/qcom/opensource/wlan/platform" remote="modules" revision="ff228b54c64457c58fc7845b92c1d651260d409a" />
-  <project name="vendor_qcom_opensource_wlan_qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" remote="modules" revision="4f4cd32b9707b07348b12ec86f5d867f4fd5078c" />
-  <project name="vendor_qcom_opensource_wlan_qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" remote="modules" revision="29db4bd470a1dfdae141ffcfed00ac560cea95c7" />
+  <project name="vendor_qcom_opensource_wlan_fw-api" path="vendor/qcom/opensource/wlan/fw-api" remote="modules" revision="e0211f6389019686fd56ccb2fb01762186b2bbce"/>
+  <project name="vendor_qcom_opensource_wlan_platform" path="vendor/qcom/opensource/wlan/platform" remote="modules" revision="ff228b54c64457c58fc7845b92c1d651260d409a"/>
+  <project name="vendor_qcom_opensource_wlan_qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" remote="modules" revision="4f4cd32b9707b07348b12ec86f5d867f4fd5078c"/>
+  <project name="vendor_qcom_opensource_wlan_qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" remote="modules" revision="29db4bd470a1dfdae141ffcfed00ac560cea95c7"/>
 </manifest>

@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="kernel"
-      fetch="ssh://git@github.com/xiaomi-8550-kernel"
-      sync-c="true"
-      sync-tags="false"
-      revision="master" />
+  <remote name="kernel" fetch="ssh://git@github.com/xiaomi-8550-kernel" sync-c="true" sync-tags="false" revision="master"/>
 
   <!-- Common kernel -->
-  <remove-project name="kernel/common" />
-  <project name="kernel/common" path="kernel_platform/common" remote="clo" revision="07c8a0788310732356f8464186ef7bdb2687848b">
-    <linkfile src="." dest=".source_date_epoch_dir"/>
+  <remove-project name="kernel/common"/>
+  <project name="kernel/common" path="kernel_platform/common" remote="clo-la" revision="07c8a0788310732356f8464186ef7bdb2687848b">
+    <linkfile dest=".source_date_epoch_dir" src="."/>
   </project>
 
   <!-- MSM kernel -->
-  <remove-project name="kernel/msm-5.15" />
+  <remove-project name="kernel/msm-5.15"/>
   <project name="kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="kernel" revision="fbf51d276893d9460cf85e61593da73eae6ac91a">
     <linkfile dest="kernel_platform/common/build.config.msm.kalama" src="build.config.msm.kalama"/>
     <linkfile dest="kernel_platform/common/scripts/setlocalversion" src="scripts/setlocalversion"/>
@@ -21,45 +17,45 @@
 
   <!-- Proprietary main devicetree -->
   <project name="vendor_qcom_proprietary_devicetree" path="vendor/qcom/proprietary/devicetree" remote="kernel" revision="c7271810b11fcf3dddda9c22a1c40eaf75738649">
-    <linkfile dest="kernel_platform/msm-kernel/arch/arm64/boot/dts/vendor" src="." />
+    <linkfile dest="kernel_platform/msm-kernel/arch/arm64/boot/dts/vendor" src="."/>
   </project>
 
   <!-- Proprietary devicetree -->
-  <project name="vendor_qcom_proprietary_audio-devicetree" path="vendor/qcom/proprietary/audio-devicetree" remote="kernel" revision="db297c963b329aa0885435812327ee67dd1d2039" />
-  <project name="vendor_qcom_proprietary_bt-devicetree" path="vendor/qcom/proprietary/bt-devicetree" remote="kernel" revision="70390db4e85adebf317b505477e64d8120e8f3ee" />
-  <project name="vendor_qcom_proprietary_camera-devicetree" path="vendor/qcom/proprietary/camera-devicetree" remote="kernel" revision="3e38fa64c4011972400a1b9e723778706d5dddff" />
-  <project name="vendor_qcom_proprietary_data-devicetree" path="vendor/qcom/proprietary/data-devicetree" remote="kernel" revision="58aa055fe7c777a836c18062e31dea979561a272" />
-  <project name="vendor_qcom_proprietary_display-devicetree" path="vendor/qcom/proprietary/display-devicetree" remote="kernel" revision="e51b201432d6b4460f64824356f62eed9c2744d5" />
-  <project name="vendor_qcom_proprietary_eSE-devicetree" path="vendor/qcom/proprietary/eSE-devicetree" remote="kernel" revision="b6e5ae3db150243cfae8ef42be8a5ef3eca2b31d" />
-  <project name="vendor_qcom_proprietary_eva-devicetree" path="vendor/qcom/proprietary/eva-devicetree" remote="kernel" revision="d1b22a13bf28288e0e1585ec47986dea00ead7ee" />
-  <project name="vendor_qcom_proprietary_graphics-devicetree" path="vendor/qcom/proprietary/graphics-devicetree" remote="kernel" revision="1e977a968c984a14cfb44d96f4393aabd517aa12" />
-  <project name="vendor_qcom_proprietary_mm-devicetree" path="vendor/qcom/proprietary/mm-devicetree" remote="kernel" revision="49838b08c432b21bda878f7ae99f7641d23c0c16" />
-  <project name="vendor_qcom_proprietary_mmrm-devicetree" path="vendor/qcom/proprietary/mmrm-devicetree" remote="kernel" revision="6c2068bd678fd1a2afe69e3cdd75b7fa7a567143" />
-  <project name="vendor_qcom_proprietary_video-devicetree" path="vendor/qcom/proprietary/video-devicetree" remote="kernel" revision="ae668eefdbf6b20cfc47a3eb630451bc9cca6cc7" />
-  <project name="vendor_qcom_proprietary_wlan-devicetree" path="vendor/qcom/proprietary/wlan-devicetree" remote="kernel" revision="648041706e4871d3491303e5822bd1a64815ad42" />
+  <project name="vendor_qcom_proprietary_audio-devicetree" path="vendor/qcom/proprietary/audio-devicetree" remote="kernel" revision="db297c963b329aa0885435812327ee67dd1d2039"/>
+  <project name="vendor_qcom_proprietary_bt-devicetree" path="vendor/qcom/proprietary/bt-devicetree" remote="kernel" revision="70390db4e85adebf317b505477e64d8120e8f3ee"/>
+  <project name="vendor_qcom_proprietary_camera-devicetree" path="vendor/qcom/proprietary/camera-devicetree" remote="kernel" revision="3e38fa64c4011972400a1b9e723778706d5dddff"/>
+  <project name="vendor_qcom_proprietary_data-devicetree" path="vendor/qcom/proprietary/data-devicetree" remote="kernel" revision="58aa055fe7c777a836c18062e31dea979561a272"/>
+  <project name="vendor_qcom_proprietary_display-devicetree" path="vendor/qcom/proprietary/display-devicetree" remote="kernel" revision="e51b201432d6b4460f64824356f62eed9c2744d5"/>
+  <project name="vendor_qcom_proprietary_eSE-devicetree" path="vendor/qcom/proprietary/eSE-devicetree" remote="kernel" revision="b6e5ae3db150243cfae8ef42be8a5ef3eca2b31d"/>
+  <project name="vendor_qcom_proprietary_eva-devicetree" path="vendor/qcom/proprietary/eva-devicetree" remote="kernel" revision="d1b22a13bf28288e0e1585ec47986dea00ead7ee"/>
+  <project name="vendor_qcom_proprietary_graphics-devicetree" path="vendor/qcom/proprietary/graphics-devicetree" remote="kernel" revision="1e977a968c984a14cfb44d96f4393aabd517aa12"/>
+  <project name="vendor_qcom_proprietary_mm-devicetree" path="vendor/qcom/proprietary/mm-devicetree" remote="kernel" revision="49838b08c432b21bda878f7ae99f7641d23c0c16"/>
+  <project name="vendor_qcom_proprietary_mmrm-devicetree" path="vendor/qcom/proprietary/mmrm-devicetree" remote="kernel" revision="6c2068bd678fd1a2afe69e3cdd75b7fa7a567143"/>
+  <project name="vendor_qcom_proprietary_video-devicetree" path="vendor/qcom/proprietary/video-devicetree" remote="kernel" revision="ae668eefdbf6b20cfc47a3eb630451bc9cca6cc7"/>
+  <project name="vendor_qcom_proprietary_wlan-devicetree" path="vendor/qcom/proprietary/wlan-devicetree" remote="kernel" revision="648041706e4871d3491303e5822bd1a64815ad42"/>
 
   <!-- Build -->
-  <remove-project name="kernel/build" />
+  <remove-project name="kernel/build"/>
   <project name="kernel_platform_build" path="kernel_platform/build/kernel" remote="kernel" revision="dc6bfa61959a4ebb62829182088b31464a7b3516">
-    <linkfile src="build.sh" dest="kernel_platform/build/build.sh"/>
-    <linkfile src="build_abi.sh" dest="kernel_platform/build/build_abi.sh"/>
-    <linkfile src="build_test.sh" dest="kernel_platform/build/build_test.sh"/>
-    <linkfile src="build_utils.sh" dest="kernel_platform/build/build_utils.sh"/>
-    <linkfile src="build_abl.sh" dest="kernel_platform/build/build_abl.sh"/>
-    <linkfile src="build_module.sh" dest="kernel_platform/build/build_module.sh"/>
-    <linkfile src="all-variants.sh" dest="kernel_platform/build/all-variants.sh"/>
-    <linkfile src="brunch" dest="kernel_platform/build/brunch"/>
-    <linkfile src="_wrapper_common.sh" dest="kernel_platform/build/_wrapper_common.sh"/>
-    <linkfile src="android" dest="kernel_platform/build/android"/>
-    <linkfile src="build-tools/path" dest="kernel_platform/build/build-tools/path"/>
-    <linkfile src="config.sh" dest="kernel_platform/build/config.sh"/>
-    <linkfile src="envsetup.sh" dest="kernel_platform/build/envsetup.sh"/>
-    <linkfile src="_setup_env.sh" dest="kernel_platform/build/_setup_env.sh"/>
-    <linkfile src="multi-switcher.sh" dest="kernel_platform/build/multi-switcher.sh"/>
-    <linkfile src="kleaf/bazel.sh" dest="kernel_platform/tools/bazel"/>
-    <linkfile src="kleaf/bazel.WORKSPACE" dest="kernel_platform/WORKSPACE"/>
-    <linkfile src="abi" dest="kernel_platform/build/abi"/>
-    <linkfile src="static_analysis" dest="kernel_platform/build/static_analysis"/>
+    <linkfile dest="kernel_platform/build/build.sh" src="build.sh"/>
+    <linkfile dest="kernel_platform/build/build_abi.sh" src="build_abi.sh"/>
+    <linkfile dest="kernel_platform/build/build_test.sh" src="build_test.sh"/>
+    <linkfile dest="kernel_platform/build/build_utils.sh" src="build_utils.sh"/>
+    <linkfile dest="kernel_platform/build/build_abl.sh" src="build_abl.sh"/>
+    <linkfile dest="kernel_platform/build/build_module.sh" src="build_module.sh"/>
+    <linkfile dest="kernel_platform/build/all-variants.sh" src="all-variants.sh"/>
+    <linkfile dest="kernel_platform/build/brunch" src="brunch"/>
+    <linkfile dest="kernel_platform/build/_wrapper_common.sh" src="_wrapper_common.sh"/>
+    <linkfile dest="kernel_platform/build/android" src="android"/>
+    <linkfile dest="kernel_platform/build/build-tools/path" src="build-tools/path"/>
+    <linkfile dest="kernel_platform/build/config.sh" src="config.sh"/>
+    <linkfile dest="kernel_platform/build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="kernel_platform/build/_setup_env.sh" src="_setup_env.sh"/>
+    <linkfile dest="kernel_platform/build/multi-switcher.sh" src="multi-switcher.sh"/>
+    <linkfile dest="kernel_platform/tools/bazel" src="kleaf/bazel.sh"/>
+    <linkfile dest="kernel_platform/WORKSPACE" src="kleaf/bazel.WORKSPACE"/>
+    <linkfile dest="kernel_platform/build/abi" src="abi"/>
+    <linkfile dest="kernel_platform/build/static_analysis" src="static_analysis"/>
   </project>
 
   <!-- Build script -->
