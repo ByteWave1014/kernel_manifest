@@ -15,7 +15,7 @@
   </project>
 
   <!-- camera-kernel -->
-  <project name="vendor_qcom_opensource_camera-kernel" path="vendor/qcom/opensource/camera-kernel" remote="modules" revision="9873f0e81a64024554b1923127ae471a9bb7ce15">
+  <project name="vendor_qcom_opensource_camera-kernel" path="vendor/qcom/opensource/camera-kernel" remote="modules" revision="f5e9b45f2845aada886c6a536153605ba41b4816">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/camera-kernel_product.mk" src="product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/camera-kernel_board.mk" src="board.mk"/>
   </project>
@@ -103,8 +103,8 @@
   </project>
 
   <!-- wlan -->
-  <project name="vendor_qcom_opensource_wlan_fw-api" path="vendor/qcom/opensource/wlan/fw-api" remote="modules" revision="e0211f6389019686fd56ccb2fb01762186b2bbce"/>
-  <project name="vendor_qcom_opensource_wlan_platform" path="vendor/qcom/opensource/wlan/platform" remote="modules" revision="ff228b54c64457c58fc7845b92c1d651260d409a"/>
-  <project name="vendor_qcom_opensource_wlan_qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" remote="modules" revision="4f4cd32b9707b07348b12ec86f5d867f4fd5078c"/>
-  <project name="vendor_qcom_opensource_wlan_qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" remote="modules" revision="29db4bd470a1dfdae141ffcfed00ac560cea95c7"/>
+  <project name="vendor_qcom_opensource_wlan_fw-api" path="vendor/qcom/opensource/wlan/fw-api" remote="modules" revision="091cec6b767ab05d5d0b491d627a773c77618400"/>
+  <project name="vendor_qcom_opensource_wlan_platform" path="vendor/qcom/opensource/wlan/platform" remote="modules" revision="1682a514fcda092f96d34567050e451c74686549"/>
+  <project name="vendor_qcom_opensource_wlan_qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" remote="modules" revision="520e7e21f89570dbed20b979a42cb1c6dd37ebac"/>
+  <project name="vendor_qcom_opensource_wlan_qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" remote="modules" revision="458a8c47b325476474b73abcce30f6ef24f777eb"/>
 </manifest>
