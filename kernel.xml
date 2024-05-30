@@ -4,7 +4,7 @@
 
   <!-- MSM kernel -->
   <remove-project name="kernel/msm-5.15"/>
-  <project name="kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="kernel" revision="f91ab1dff76cf9e3f6661d6c5d7d7d1b0577ddff">
+  <project name="kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="kernel" revision="555f7046d54e8e834596ad0e93095d34e461045b">
     <linkfile dest="kernel_platform/common/build.config.msm.kalama" src="build.config.msm.kalama"/>
     <linkfile dest="kernel_platform/common/scripts/setlocalversion" src="scripts/setlocalversion"/>
   </project>

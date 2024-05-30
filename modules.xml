@@ -15,7 +15,7 @@
   </project>
 
   <!-- camera-kernel -->
-  <project name="vendor_qcom_opensource_camera-kernel" path="vendor/qcom/opensource/camera-kernel" remote="modules" revision="f5e9b45f2845aada886c6a536153605ba41b4816">
+  <project name="vendor_qcom_opensource_camera-kernel" path="vendor/qcom/opensource/camera-kernel" remote="modules" revision="72e3a4034206bf08a3035f418314ce496d1f386c">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/camera-kernel_product.mk" src="product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/camera-kernel_board.mk" src="board.mk"/>
   </project>
@@ -39,7 +39,7 @@
   </project>
 
   <!-- display-kernel -->
-  <project name="vendor_qcom_opensource_display-drivers" path="vendor/qcom/opensource/display-drivers" remote="modules" revision="3c7df71c9c4aa46b85564ae1359cc0efaacffa8c">
+  <project name="vendor_qcom_opensource_display-drivers" path="vendor/qcom/opensource/display-drivers" remote="modules" revision="9e1168acd5742e17eef7441625a0ab44d964e4d1">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display_driver_product.mk" src="display_driver_product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/display_driver_board.mk" src="display_driver_board.mk"/>
   </project>
