@@ -2,7 +2,7 @@
 <manifest>
   <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
   <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
-  <project remote="clo-la" name="abl/tianocore/edk2" path="kernel_platform/bootable/bootloader/edk2" revision="ad19bcb5f27b2f1e5dfe438265a1fce11afa08b7" upstream="refs/heads/uefi.lnx.4.0.r1-rel"/>
+  <project remote="clo-la" name="abl/tianocore/edk2" path="kernel_platform/bootable/bootloader/edk2" revision="629d2fd365796fd8cfa0d7ed60cdbcfe9368a941" upstream="refs/heads/uefi.lnx.4.0.r1-rel"/>
   <project remote="clo-la" name="kernel/build" path="kernel_platform/build/kernel" revision="06d2b056c302c13632c21bc722464152b768b08f" upstream="refs/heads/kernel.lnx.5.15.r1-rel">
     <linkfile dest="kernel_platform/build/build.sh" src="build.sh"/>
     <linkfile dest="kernel_platform/build/build_abi.sh" src="build_abi.sh"/>
@@ -27,7 +27,7 @@
   <project remote="clo-la" name="kernel/common" path="kernel_platform/common" revision="0e4f0f0a6b4de504a24369e24296054eafec7ac0" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel" groups="qki">
     <linkfile dest=".source_date_epoch_dir" src="."/>
   </project>
-  <project remote="clo-la" name="kernel/msm-5.15" path="kernel_platform/msm-kernel" revision="813d2d9cd9ce1f10e67c40d1c22837ba7f66a5da" upstream="refs/heads/kernel.lnx.5.15.r1-rel"/>
+  <project remote="clo-la" name="kernel/msm-5.15" path="kernel_platform/msm-kernel" revision="58b2bf997786a59e75dd8d6e165a101bf24a2946" upstream="refs/heads/kernel.lnx.5.15.r1-rel"/>
   <project remote="clo-la" name="kernel/prebuilts/build-tools" path="kernel_platform/prebuilts/kernel-build-tools" revision="a27755ba41db8a1487c7d2ac7d0da22ec5e593c7" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
   <project remote="clo-la" name="kernel_platform/build/bazel_common_rules" path="kernel_platform/build/bazel_common_rules" revision="2158c0cec82374e92e9599e3a8fd9ec5c10ba7ad" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
   <project remote="clo-la" name="kernel_platform/external/bazel-skylib" path="kernel_platform/external/bazel-skylib" revision="8908ad2471f44bf192a869189c35fb74ff8aa307" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
