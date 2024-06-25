@@ -3,7 +3,7 @@
   <remote name="modules" fetch="ssh://git@github.com/xiaomi-8550-kernel" sync-c="true" sync-tags="false" revision="master"/>
 
   <!-- audio-kernel -->
-  <project name="vendor_qcom_opensource_audio-kernel-ar" path="vendor/qcom/opensource/audio-kernel" remote="modules" revision="9d1c0d4719d2715982ab52462f3313608c3eb6cd">
+  <project name="vendor_qcom_opensource_audio-kernel-ar" path="vendor/qcom/opensource/audio-kernel" remote="modules" revision="90d341c829151756fb9f59daef748794e769ca9f">
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/audio_kernel_vendor_board.mk" src="audio_kernel_vendor_board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/audio_kernel_product_board.mk" src="audio_kernel_product_board.mk"/>
   </project>
@@ -73,7 +73,7 @@
   <project name="vendor_qcom_opensource_mmrm-driver-test" path="vendor/qcom/opensource/mmrm-driver/test" remote="modules" revision="e6e34bf83681bad071d05ef6baf8d8db2f7edd7d"/>
 
   <!-- nfc-st-driver -->
-  <project name="vendor_qcom_opensource_nfc-st-driver" path="vendor/qcom/opensource/nfc-st-driver" remote="modules" revision="294a5b88accea93d8a78a49225d6415e5da5d8ce">
+  <project name="vendor_qcom_opensource_nfc-st-driver" path="vendor/qcom/opensource/nfc-st-driver" remote="modules" revision="ea94a475fceb1f618d9b2fbf8935c00855b99074">
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/nfc_kernel_dlkm_vendor_board.mk" src="nfc_kernel_dlkm_vendor_board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc_kernel_dlkm_vendor_product.mk" src="nfc_kernel_dlkm_vendor_product.mk"/>
   </project>
@@ -91,7 +91,7 @@
   </project>
 
   <!-- touch-drivers -->
-  <project name="vendor_qcom_opensource_touch-drivers" path="vendor/qcom/opensource/touch-drivers" remote="modules" revision="7ee9811151b211f575ecac946caa8e82af7629b5">
+  <project name="vendor_qcom_opensource_touch-drivers" path="vendor/qcom/opensource/touch-drivers" remote="modules" revision="a9811fd74ff40d74114a76ed8411e034e8f02fe7">
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/touch_driver_board.mk" src="touch_driver_board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/touch_driver_product.mk" src="touch_driver_product.mk"/>
   </project>
