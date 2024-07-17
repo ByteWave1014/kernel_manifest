@@ -5,13 +5,13 @@
 
   <!-- Common kernel -->
   <remove-project name="kernel/common"/>
-  <project name="kernel/common" path="kernel_platform/common" remote="google" revision="android13-5.15">
+  <project name="kernel/common" path="kernel_platform/common" remote="google" revision="4c213b2ea1f58bc640894684f65c92b6cdee522d">
     <linkfile dest=".source_date_epoch_dir" src="."/>
   </project>
 
   <!-- MSM kernel -->
   <remove-project name="kernel/msm-5.15"/>
-  <project name="kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="kernel" revision="fac3f24202a91951fe0258c552a23d1a48db6137">
+  <project name="kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="kernel" revision="c80971be756e7ca7337c2fbb1687384bbf9805cd">
     <linkfile dest="kernel_platform/common/build.config.msm.kalama" src="build.config.msm.kalama"/>
     <linkfile dest="kernel_platform/common/scripts/setlocalversion" src="scripts/setlocalversion"/>
   </project>
