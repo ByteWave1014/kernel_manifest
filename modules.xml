@@ -39,7 +39,7 @@
   </project>
 
   <!-- display-kernel -->
-  <project name="vendor_qcom_opensource_display-drivers" path="vendor/qcom/opensource/display-drivers" remote="modules" revision="9e1168acd5742e17eef7441625a0ab44d964e4d1">
+  <project name="vendor_qcom_opensource_display-drivers" path="vendor/qcom/opensource/display-drivers" remote="modules" revision="9f82ff183a61b322cd5e0426a12be42701acc520">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display_driver_product.mk" src="display_driver_product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/display_driver_board.mk" src="display_driver_board.mk"/>
   </project>
@@ -91,7 +91,7 @@
   </project>
 
   <!-- touch-drivers -->
-  <project name="vendor_qcom_opensource_touch-drivers" path="vendor/qcom/opensource/touch-drivers" remote="modules" revision="a9811fd74ff40d74114a76ed8411e034e8f02fe7">
+  <project name="vendor_qcom_opensource_touch-drivers" path="vendor/qcom/opensource/touch-drivers" remote="modules" revision="7d78c15b2a4d2c885cffdcfa65170f72bb33f460">
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/touch_driver_board.mk" src="touch_driver_board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/touch_driver_product.mk" src="touch_driver_product.mk"/>
   </project>
