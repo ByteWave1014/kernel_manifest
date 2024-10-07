@@ -5,19 +5,19 @@
 
   <!-- Common kernel -->
   <remove-project name="kernel/common"/>
-  <project name="kernel/common" path="kernel_platform/common" remote="google" revision="b48c8cf670c6e014564db3e9b9e023fcc3fb5c13">
+  <project name="kernel/common" path="kernel_platform/common" remote="google" revision="e508fa9bacf1f9644be2f1badd107e0e8790055a">
     <linkfile dest=".source_date_epoch_dir" src="."/>
   </project>
 
   <!-- MSM kernel -->
   <remove-project name="kernel/msm-5.15"/>
-  <project name="kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="kernel" revision="acdf4040471619acc3df1dbef5c09483e7e83dd7">
+  <project name="kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="kernel" revision="e80e83524c619f3b45858d5516713f48d2658a00">
     <linkfile dest="kernel_platform/common/build.config.msm.kalama" src="build.config.msm.kalama"/>
     <linkfile dest="kernel_platform/common/scripts/setlocalversion" src="scripts/setlocalversion"/>
   </project>
 
   <!-- Proprietary main devicetree -->
-  <project name="vendor_qcom_proprietary_devicetree" path="vendor/qcom/proprietary/devicetree" remote="kernel" revision="65e4ebeb88562476146bfdcc3a8355cba88a74d6">
+  <project name="vendor_qcom_proprietary_devicetree" path="vendor/qcom/proprietary/devicetree" remote="kernel" revision="e7340f8bde3952734e4a943fc88d16ad5f3afef8">
     <linkfile dest="kernel_platform/msm-kernel/arch/arm64/boot/dts/vendor" src="."/>
   </project>
 
