@@ -5,13 +5,13 @@
 
   <!-- Common kernel -->
   <remove-project name="kernel/common"/>
-  <project name="kernel/common" path="kernel_platform/common" remote="google" revision="e508fa9bacf1f9644be2f1badd107e0e8790055a">
+  <project name="kernel/common" path="kernel_platform/common" remote="google" revision="af7b32e5ddef282545498f042875ae6af8775e25">
     <linkfile dest=".source_date_epoch_dir" src="."/>
   </project>
 
   <!-- MSM kernel -->
   <remove-project name="kernel/msm-5.15"/>
-  <project name="kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="kernel" revision="e80e83524c619f3b45858d5516713f48d2658a00">
+  <project name="kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="kernel" revision="ed9d1430cf12e7d2ec272f54541dd7652918b645">
     <linkfile dest="kernel_platform/common/build.config.msm.kalama" src="build.config.msm.kalama"/>
     <linkfile dest="kernel_platform/common/scripts/setlocalversion" src="scripts/setlocalversion"/>
   </project>
