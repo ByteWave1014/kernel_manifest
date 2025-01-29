@@ -17,7 +17,7 @@
   </project>
 
   <!-- Proprietary main devicetree -->
-  <project name="vendor_qcom_proprietary_devicetree" path="vendor/qcom/proprietary/devicetree" remote="kernel" revision="772a25fdc840d65b76dd3901f271ec9e9be8c866">
+  <project name="vendor_qcom_proprietary_devicetree" path="vendor/qcom/proprietary/devicetree" remote="kernel" revision="c9e5d275154eb11b688abd19055734f8fea6edfd">
     <linkfile dest="kernel_platform/msm-kernel/arch/arm64/boot/dts/vendor" src="."/>
   </project>
 
