@@ -2,8 +2,8 @@
 <manifest>
   <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
   <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
-  <project remote="clo-la" name="abl/tianocore/edk2" path="kernel_platform/bootable/bootloader/edk2" revision="2daf6ee6886b193196356ea3264056171f314c35" upstream="refs/heads/uefi.lnx.4.0.r1-rel"/>
-  <project remote="clo-la" name="kernel/build" path="kernel_platform/build/kernel" revision="0e13607930bcdebb25789aa17f8c78ed89263e3b" upstream="refs/heads/kernel.lnx.5.15.r1-rel">
+  <project remote="clo-la" name="abl/tianocore/edk2" path="kernel_platform/bootable/bootloader/edk2" revision="0979d1112dd5aa04ab51fe456c109a59b650e341" upstream="refs/heads/uefi.lnx.4.0.r1-rel"/>
+  <project remote="clo-la" name="kernel/build" path="kernel_platform/build/kernel" revision="6e39ca2428f0e41d84d039087861e112cfdb5ed3" upstream="refs/heads/kernel.lnx.5.15.r1-rel">
     <linkfile dest="kernel_platform/build/build.sh" src="build.sh"/>
     <linkfile dest="kernel_platform/build/build_abi.sh" src="build_abi.sh"/>
     <linkfile dest="kernel_platform/build/build_test.sh" src="build_test.sh"/>
@@ -24,12 +24,12 @@
     <linkfile dest="kernel_platform/build/abi" src="abi"/>
     <linkfile dest="kernel_platform/build/static_analysis" src="static_analysis"/>
   </project>
-  <project remote="clo-la" name="kernel/common" path="kernel_platform/common" revision="b4b67017910107df7b5a062407ae69f87fbd17d5" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel" groups="qki">
+  <project remote="clo-la" name="kernel/common" path="kernel_platform/common" revision="a3a0d1523dc8d41c0313f259e3d4f6f1588aa492" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel" groups="qki">
     <linkfile dest=".source_date_epoch_dir" src="."/>
   </project>
-  <project remote="clo-la" name="kernel/msm-5.15" path="kernel_platform/msm-kernel" revision="5ba3daf2e3ab748ac98584da8e1f2b81a5b6ecb9" upstream="refs/heads/kernel.lnx.5.15.r1-rel"/>
+  <project remote="clo-la" name="kernel/msm-5.15" path="kernel_platform/msm-kernel" revision="2576223ee1cc5ad5f68320bd5449355263aac084" upstream="refs/heads/kernel.lnx.5.15.r1-rel"/>
   <project remote="clo-la" name="kernel/prebuilts/build-tools" path="kernel_platform/prebuilts/kernel-build-tools" revision="a27755ba41db8a1487c7d2ac7d0da22ec5e593c7" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
-  <project remote="clo-la" name="kernel_platform/build/bazel_common_rules" path="kernel_platform/build/bazel_common_rules" revision="25c9ea1930b597b31964bfb51ec9ff7ffb5cc2c7" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
+  <project remote="clo-la" name="kernel_platform/build/bazel_common_rules" path="kernel_platform/build/bazel_common_rules" revision="0b71409dd6fabfb2b8853cb611940b4a1a748f28" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
   <project remote="clo-la" name="kernel_platform/external/bazel-skylib" path="kernel_platform/external/bazel-skylib" revision="8908ad2471f44bf192a869189c35fb74ff8aa307" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
   <project remote="clo-la" name="kernel_platform/external/dtc" path="kernel_platform/external/dtc" revision="7d93a906f90ff0613866b167871a5bbba47ed320" upstream="refs/heads/kernel.build.lnx.1.0.r2-rel"/>
   <project remote="clo-la" name="kernel_platform/external/python/absl-py" path="kernel_platform/external/python/absl-py" revision="2e47753264acc4dfb16031e1156201dc5498ef65" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
