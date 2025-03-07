@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="google" fetch="https://android.googlesource.com" sync-c="true" sync-tags="false"/>
-  <remote name="kernel" fetch="ssh://git@github.com/xiaomi-8550-kernel" sync-c="true" sync-tags="false" revision="master"/>
+  <remote name="kernel" fetch="ssh://git@github.com/xiaomi-8550-kernel" sync-c="true" sync-tags="false" revision="xiaomi-8550"/>
+  <remote name="kernel-msm" fetch="ssh://git@github.com/ByteWave1014" sync-c="true" sync-tags="false" revision="vauxite"/>
 
   <!-- Common kernel -->
   <remove-project name="kernel/common"/>
@@ -11,7 +12,7 @@
 
   <!-- MSM kernel -->
   <remove-project name="kernel/msm-5.15"/>
-  <project name="kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="kernel">
+  <project name="kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="kernel-msm">
     <linkfile dest="kernel_platform/common/build.config.msm.kalama" src="build.config.msm.kalama"/>
     <linkfile dest="kernel_platform/common/scripts/setlocalversion" src="scripts/setlocalversion"/>
   </project>
@@ -37,7 +38,7 @@
 
   <!-- Build -->
   <remove-project name="kernel/build"/>
-  <project name="kernel_platform_build" path="kernel_platform/build/kernel" remote="kernel">
+  <project name="kernel_platform_build" path="kernel_platform/build/kernel" remote="kernel-msm">
     <linkfile dest="kernel_platform/build/build.sh" src="build.sh"/>
     <linkfile dest="kernel_platform/build/build_abi.sh" src="build_abi.sh"/>
     <linkfile dest="kernel_platform/build/build_test.sh" src="build_test.sh"/>
